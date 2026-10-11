@@ -1,0 +1,21 @@
+{
+  "name": "chemhelp-web-app",
+  "version": "1.0.0",
+  "description": "ChemHelp educational chemistry web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "chemistry",
+    "education",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
