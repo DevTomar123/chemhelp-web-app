@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChemHelp | Learn Chemistry with Confidence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>ChemHelp</h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2>Make Chemistry Simple and Engaging</h2>
+          <p>
+            ChemHelp helps students master chemistry with short topic guides, searchable content,
+            and interactive quizzes.
+          </p>
+          <a href="#topics" class="cta-btn">Start Learning</a>
+        </div>
+      </section>
+
+      <section id="topics" class="card-section">
+        <h3>Chemistry Learning Topics</h3>
+        <div class="search-box">
+          <label for="topicSearch" class="sr-only">Search chemistry topics</label>
+          <input type="text" id="topicSearch" placeholder="Search by topic or keyword..." />
+          <button id="searchBtn">Search</button>
+        </div>
+        <div id="searchFeedback" class="search-feedback" aria-live="polite"></div>
+        <div id="topicGrid" class="topic-grid"></div>
+      </section>
+
+      <section id="quiz" class="card-section">
+        <h3>Quick Chemistry Quiz</h3>
+        <form id="quizForm"></form>
+        <div class="quiz-actions">
+          <button id="submitQuizBtn" type="button">Submit Quiz</button>
+          <button id="resetQuizBtn" type="button" class="secondary">Reset</button>
+        </div>
+        <div id="quizResult" class="quiz-result" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ChemHelp — Learn chemistry, one concept at a time.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
